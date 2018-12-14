@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Raleway" rel="stylesheet">
+    <title>A/B Testing</title>
+  </head>
+  <body id="abTesting">
+    <div id="navBar">
+      <a href="./index.html">Xiuzhen (Tiffany) Lei</a>
+    </div>
+    <div id="topBanner">
+      <h1>A/B Testing</h1>
+      <p>A/B Testing for Memphis Taxi Cabs is a study conducted as part of a UI/UX class exploring A/B Testing as one method of measuring and improving user experience.</p>
+      <a href="https://whispering-oasis-16794.herokuapp.com" target="_blank">Visit Website</a>
+    </div>
+    <div class="subheading">
+      <h2>Context</h2>
+    </div>
+    <div class="writing">
+      <p>For this project, my goal was to create two versions of the same website (Memphis Taxi Cabs) to see how small changes affect user reactions and responses.</p>
+    </div>
+    <div class="subheading">
+      <h2>Design & Hypotheses</h2>
+    </div>
+    <div class="writing">
+      <h3>Version A</h3>
+      <img src="imgs/abTesting/versionA.png" alt="version A">
+      <h3>Version B</h3>
+      <img src="imgs/abTesting/versionB.png" alt="version B">
+      <h3>Null Hypotheses:</h3>
+      <ol>
+	<li>Click rate: The click through rate on Version A will be equal to the click through rate on Version B.</li>
+	<li>Time to click: The time to click on Version A will be equal to the click through rate on Version B.</li>
+	<li>Dwell time: The dwell time on Version A will be equal to the click through rate on Version B.</li>
+	<li>Return rate: The return rate on Version A will be equal to the click through rate on Version B.</li>
+      </ol>
+      <h3>Alternate Hypotheses</h3>
+      <ol>
+      <li>Click rate: The click through rate on Version B will be greater than the click through rate on Version A, since Version B has green buttons, which is more enticing (since “Go” is associated with green), encouraging the user to click through faster.</li>
+      <li>Time to click: The average time to click for Version B will be faster / smaller than for Version A, since all four taxi types can be seen with less or no scrolling (depending on screen size) and keywords are bolded, allowing the user to more quickly find what they need.</li>
+      <li> Dwell time: The dwell time will be longer for Version B than for Version A, since the bolded keywords will likely make it easier for users to decide on a taxi service the first time without having to browse through all of them (by constantly coming back).</li>
+      <li>Return rate: The return rate will be lower for Version B than for Version A, since bolded keywords and overall formatting will increase the likelihood that the user finds what they need the first time.</li>
+      </ol>
+    </div>
+    <div class="subheading">
+       <h2>Results</h2>
+    </div>
+    <div class="writing">
+      <h3>Metric Computations</h3>
+      <img src="imgs/abTesting/metricComputations.png" alt="Metric Computations">
+      <h3>Statistical Tests:</h3>
+<p>For click rate, I chose the chi-squared test, because the data is discrete (clicked or didn’t click). For time to click, I chose the t-test, because the data consists of measurements of time, which is continuous, and because the null hypothesis I am testing consists of means.</p>
+<p>For dwell time, I chose the t-test, because the data consists of measurements of time, which is continuous, and because the null hypothesis I am testing consists of means.</p>
+<p>For return rate, I chose the chi-squared test, because the data is discrete (returned or didn’t return).</p>
+<h3>Statistical Computations:</h3>
+<p>- Click rate: X2 = 0.3058 < 3.84, so p > 0.05. This means that the results were not statistically significant, so we fail to reject the null hypothesis.</p>
+<p>- Time to click: abs(t) = 1.1085 < 1.714, so p > 0.05. This means that the results were not statistically significant, so we fail to reject the null hypothesis.</p>
+<p>- Dwell time: abs(t) = 1.8315 > 1.7247, so p < 0.05. This means that the results were statistically significant, so we reject the null hypothesis.</p>
+<p>- Return rate: X2 = 1.0785 < 3.84, so p > 0.05. This means that the results were not statistically significant, so we fail to reject the null hypothesis.</p>
+    </div>
+    <div class="subheading">
+      <h2>Conclusion</h2>
+    </div>
+    <div class="writing">
+      <p>I would recommend that the company use version B, since based on the data analysis from AB testing, version B leads to a longer dwell time (shown to be statistically significant by the t-test) and a longer dwell time means that the user found the external link to be relevant.</p>
+    </div>
+  </body>
+</html>

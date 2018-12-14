@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Raleway" rel="stylesheet">
+    <title>LangDev</title>
+  </head>
+  <body id="langDev">
+    <div id="navBar">
+      <a href="./index.html">Xiuzhen (Tiffany) Lei</a>
+    </div>
+    <div id="topBanner">
+      <h1>LangDev</h1>
+      <p>LangDev is a language-learning web application and browser extension offering a more customized language-learning experience. Currently, it focuses on Chinese as the foreign language. It was created as part of a Software Engineering group final project in Spring 2018.</p>
+      <p><u>Team Members:</u> Xiuzhen Lei, Jearson Alfajardo, Nickolas Eisele, Zhengyi Peng</p>
+      <p><u>My Role:</u> Front end designer and developer for the web app component</p>
+    </div>
+    <div class="subheading">
+      <h2>Context</h2>
+    </div>
+    <div class="writing">
+      <h3>Problem:</h3>
+      <p>Currently, there are many, many language learning websites out there, but very few that allow users to choose and build their own vocabulary. Of those few that do, none - to our knowledge - allow users to customize their vocabulary list without having to input a preexisting data set of already translated words. Wouldn't it be much simpler and less tedious if an web app + extension could simultaneously assist in building a personalized vocabulary set and help with language learning?</p>
+      <h3>Solution:</h3>
+      <p>LangDev tackles this problem in two parts. First, LangDev's Chrome browser extension allows users to build their vocabulary set as painlessly as possible. When a user comes across an unknown word in a foreign language while browsing the internet, they can highlight the word and press a keyboard shortcut to bring up a list of definitions for the word. If they feel that this is a word that they would like to learn and remember, they can simply press the add button next to the definition. The word is then saved to the user's personal vocabulary list.</p><br>
+      <p> Second, given this personalized vocabulary set, LangDev's corresponding web application will motivate and assist the user in learning through various learning techniques. The Leitner system, which implements spaced repetition, is used to sort the vocabulary into groups to present to the user for review at various intervals. Besides flashcard review, there are also progress trackers, achievements, and language learning games utilizing the personalized vocabulary to aid users in their language learning journey. 
+      </p>
+    </div>
+    <div class="subheading">
+      <h2>Tools</h2>
+    </div>
+    <div class="writing">
+      <ul>
+	<h3>Frontend:</h3>
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JavaScript (with JQuery Library)</li>
+      </ul>
+      <ul>
+	<h3>Backend:</h3>
+	<li>SQL Database</li>
+	<li>Java (with Spark Framework)</li>
+      </ul>
+    </div>
+    <div class="subheading">
+      <h2>Process</h2>
+    </div>
+    <div class="writing">
+      <p>First, We started off by designing a user flow diagram to clarify how all of LangDev's components (the extension and the individual web app pages) fit together, and iterated through them to simplify navigation and ease of learning for the user.</p>
+
+      <img src="imgs/langDev/langDevFlow.gif" alt="langdev flow">
+      <p>Note: The gif reflects some of the wireframes and more detailed mockups that I later built on top of that diagram for clarification purposes.</p><br>
+      <p>We then mapped out the majority of the key interactions between the frontend and the backend for all of the major components of the web application and extension, noting the data that needs to be stored and retrieved at various pages and situations. This allowed us to efficiently work in our individual roles while maintaining the consistency needed for easier integration at a later date.</p>
+      <br>
+    </div>
+    <div class="subheading">
+      <h2>Design & Development</h2>
+    </div>
+    <div class="writing">
+      <img src="imgs/langDev/langDevHome.gif" alt="langdev home">
+      <div class="nextTo">
+      <img src="imgs/langDev/langDevStatisticsPage.png" alt="langdev statistics">
+      <img src="imgs/langDev/langDevAboutPage.png" alt="langdev about">
+      </div><br>
+      <h3>Quizzer Game:</h3>
+      <img src="imgs/langDev/game.gif" alt="langdev game">
+      <p>After committing to a more final design, I also decided to make the website responsive, since many language learners enjoy studying during their commutes or on the go. </p><br>
+      <img src="imgs/langDev/responsive.gif" alt="langdev responsive design">
+    </div>
+    <div class="subheading">
+      <h2>Conclusion</h2>
+    </div>
+    <div class="writing conclusion">
+      <h3>Key Takeaways</h3>
+      <ul>
+	<li>Although integration was not as difficult as we had originally thought it might be (likely because we took precautions, as described in the process above), it still took quite a bit of time, and we had our fair share of Github merge conflicts. So, one of my lessons learned is to start integration early and to integrate each part of the project as soon as they are stable. Once we started following that strategy, (though we couldn't avoid merge conflicts altogether) our merge conflicts became much easier to resolve, since all of our copies of the code weren't radically different from each others.</li><br>
+	<li>We don't always have time to accomplish all of the cool features that we want to include, and that often turns out to be totally okay. Towards the end of the project, we made the decision to focus on solidifying and fully testing our core functionality rather than implementing additional features, and that allowed us to feel confident in our final product rather than crunched for time.</li><br>
+	<li>Working in different roles / on different parts of the project, but still being in the same room (advice that we'd received from our professor and took to heart) works incredibly well in terms of building productivity, since we were able to easily and quickly discuss functionalities and interactions between our individual parts of the project. It also boosted morale during those tricky debugging sessions and made the development process that much more enjoyable.</li><br>
+      </ul>
+    </div>
+  </body>
+</html>

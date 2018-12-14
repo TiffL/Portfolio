@@ -1,0 +1,348 @@
+body {
+    margin: 0;
+    --primary-color: #0CBFE3; /*#1E90FF;*/ /*#00BFFF;*/
+}
+
+h1 {
+    font-family: 'Comfortaa', cursive;
+    color: white;/*var(--text-color);*/
+}
+
+#topPart {
+    font-family: 'Comfortaa', cursive;
+    background-color: var(--primary-color);
+    color: white;
+    height: 80vh;
+}
+
+#mainPage h1 {
+    padding: 200px 0px 0px 0px;
+    text-align: center;
+}
+
+.portfolioItem h2 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    position: absolute;
+    margin: 10px auto 0px -3px;
+    z-index: 1;
+    box-shadow: 1px 1px 10px grey;
+}
+
+#mainPage h3 {
+    margin: auto;
+    text-align: center;
+    max-width: 500px;
+}
+
+#mainPage #navBar a {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+#bottomPart {
+    text-align: center;
+    margin: -150px auto 0px auto;
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.portfolioItem {
+    margin: 30px 20px 0px 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    min-width: 300px;
+    text-align: center;
+    background-color: white; 
+    box-shadow: 1px 1px 10px grey;
+}
+
+.portfolioItem a {
+    padding: 0px;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.portfolioItem img {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-width: 300px;
+    height: auto;
+    opacity: 0.8;
+    z-index:-1;
+}
+
+#abTestingHome img {
+    height: 120%;
+}
+
+/* ----------------------------------------------- */
+/* --------------- Porfolio ---------------------- */
+/* ----------------------------------------------- */
+
+#navBar {
+    padding: 20px 0px 0px 0px;
+    position: absolute;
+    font-size: 20px;
+}
+
+#navBar a {
+    margin-left: 20px;
+    padding: 10px 10px 5px 10px;
+    border: 0px;
+    border: 2px solid white;
+    border-radius: 0px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+.subheading {
+    margin: 20px 0px 20px 0px;
+    padding: 15px;
+    background-color: grey; /* var(--primary-color);*/
+    color: white;
+}
+
+.writing {
+    padding: 20px 0px;
+    line-height: 1.5;
+    color: #383838;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
+
+a {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-family: 'Comfortaa', cursive;
+    text-decoration: none;
+    border: 3px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+#topBanner {
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    height: 80vh;
+}
+
+#foodFinder h1, #redesign h1, #langDev h1, #abTesting h1 {
+    margin: 0px;
+    padding: 15% 0px 30px 0px;
+    font-size: 56px;
+    color: white;
+    text-align: center;
+}
+
+/* ----------------------------------------------- */
+/* --------------- Food Finder ------------------- */
+/* ----------------------------------------------- */
+#foodFinder {
+    background-color: white;/*#F0EDE5;*/
+    text-align: center;
+    margin-top:21px;
+}
+
+#foodFinder a:hover {
+    color: #66cc91;
+    background-color: white;
+}
+
+#foodFinder img {
+    width: 60%;
+    box-shadow: 1px 1px 10px grey;
+    margin: 20px 0px 30px 0px;
+}
+
+#foodFinder #topBanner {
+    background-color: #66cc91;
+}
+
+#topBanner p {
+    width: 50%;
+    margin: 30px auto 30px auto;
+    text-align: center;
+}
+
+#foodFinder ul {
+    width: 20%;
+    margin: auto;
+    text-align: left;
+}
+
+
+/* ----------------------------------------------- */
+/* ----------------- Redesign -------------------- */
+/* ----------------------------------------------- */
+
+#redesign {
+    text-align: center;
+    margin-top:21px;
+}
+
+#redesign .subheading {
+    background-color: #0561a8;
+}
+
+#redesign #topBanner {
+    background-color: #DD5F0A;
+}
+
+#redesign img {
+    width: 60%;
+    box-shadow: 1px 1px 10px grey;
+    margin: 20px 0px 30px 0px;
+}
+
+#redesign ul {
+    width: 45%;
+    margin: auto;
+    text-align: left;
+}
+
+#wireframes img {
+    margin: 10px;
+    width: 25%;
+    min-width: 400px;
+    transition: transform 0.25s ease;
+    transform: scale(1);
+    cursor: zoom-in;
+    z-index: -1;
+}
+
+#wireframes img:active {
+    transition: transform 0.25s ease;
+    transform: scale(1.3);
+    cursor: zoom-out;
+    z-index: 1;
+}
+
+#redesign .nextTo img {
+    display: inline-block;
+    width: 40%;
+    margin: 5px;
+    min-width: 500px;
+    transition: transform 0.25s ease;
+}
+
+/* ----------------------------------------------- */
+/* ----------------- LangDev -------------------- */
+/* ----------------------------------------------- */
+
+#langDev {
+    text-align: center;
+    margin-top:21px;
+}
+
+#langDev h3 {
+    color: #36AAC9;
+}
+
+#langDev a:hover {
+    color: #36AAC9;
+    background-color: white;
+}
+
+#langDev .subheading {
+    background-color: #FFFED1;
+    color: grey;
+}
+
+#langDev #topBanner {
+    background-color: #36AAC9;
+    
+}
+
+#langDev img {
+    width: 60%;
+    box-shadow: 1px 1px 10px grey;
+    margin: 20px 0px 30px 0px;
+}
+
+#langDev .nextTo img {
+    display: inline-block;
+    width: 45%;
+    margin: 5px;
+    min-width: 500px;
+    transition: transform 0.25s ease;
+    transform: scale(1);
+    cursor: zoom-in;
+    z-index: -1;
+}
+
+#langDev .nextTo img:active {
+    transition: transform 0.25s ease;
+    transform: scale(1.5);
+    cursor: zoom-out;
+    z-index: 1;
+}
+
+#langDev ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin: 0px;
+    text-align: left;
+}
+
+#langDev .conclusion ul {
+    width: 45%;
+}
+
+/* ----------------------------------------------- */
+/* ----------------- ABTesting ------------------- */
+/* ----------------------------------------------- */
+
+#abTesting {
+    text-align: center;
+    margin-top:21px;
+}
+
+#abTesting a {
+    color: grey;
+    border: 2px solid grey;
+}
+
+#abTesting a:hover {
+    color: #ECEC86;
+    background-color: grey;
+}
+
+#abTesting .subheading {
+    background-color: #126C83;
+    color: white;
+}
+
+#abTesting #topBanner {
+    background-color: #ECEC86;
+    color: grey;
+}
+
+#abTesting h1 {
+    color: grey;
+}
+
+#abTesting img {
+    width: 60%;
+    box-shadow: 1px 1px 10px grey;
+    margin: 20px 0px 30px 0px;
+}
+
+#abTesting ol {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
