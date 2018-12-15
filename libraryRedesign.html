@@ -24,7 +24,7 @@
       <h2>Tools</h2>
     </div>
     <div class="writing">
-      <ul>
+      <ul id="tools">
 	<li>Balsamiq</li>
 	<li>Proto.io</li>
       </ul>
@@ -36,7 +36,7 @@
       <p>Before starting on my redesign, I took a more in-depth look at the QueensLibrary website. The homepage for the current website looks like this: </p>
       <img src="imgs/redesign/queensLibraryTop.png" alt="original home page">
       <img src="imgs/redesign/queensLibraryBottom2.png" alt="original home page">
-      <p>In doing so, I identified specific areas for potential improvement.<br><br></p>
+      <p>While doing so, I identified specific areas for potential improvement.<br><br></p>
       <p>
 	<b>Intuitive Design:</b> <br><br>
 	<ul>
@@ -56,15 +56,16 @@
       <p>
 	<b>Efficiency:</b> (especially for these common uses) <br><br>
 	<ul>
-	  <li>Searching: Filtering after performing a search currently requires clicking on links consecutively to narrow down one feature (languages, years, types, etc.) at a time. For example, filtering by language and type would require two page reloads. In addition, the filter options are all listed on a right sidebar, so a user would have to scroll down a lot to get to what they want to filter by.</li>
+	  <li>Searching: Filtering after performing a search currently requires clicking on links consecutively to narrow down one feature (languages, years, types, etc.) at a time. For example, filtering by language and type would require two page reloads. In addition, the filter options are all listed on a right sidebar, so a user would have to scroll down a lot to get to what they want to filter by.</li><br>
 	  <li>Finding hours and locations: Currently, the user has to first find the link to the hours and locations page on one of the navigation areas, and then has to scroll through a long list of all potential hours to find the library that they are looking for. </li>
 	</ul>
-      </p>
+      </p><br>
     </div>
     <div class="subheading">
       <h2>Design</h2>
     </div>
     <div class="writing">
+      <p>Having figured out the areas I wanted to improve upon, I then decided to redesign five of the website's pages based on usability guidelines. The pages I chose were the homepage, the search page, the individual library book information page, the user account page, and the kid's page, since these five pages together captured enough of the variety of features and services on the library's website. I then opened up Balsamiq to test out various layouts and ways of consolidating the library's information to improve user experience.</p>
       <h3>Lo-fi wireframes (Usability Redesign):</h3>
       <div id="wireframes">
 	<img src="imgs/redesign/Homepage.png" alt="home page">
@@ -74,10 +75,24 @@
 	<img src="imgs/redesign/KidsPage.png" alt="kids">
       </div>
       <br><br>
-      <p></p>
+      <p>
+	<b>Intuitive Design / Navigation:</b><br><br>
+	To make navigation more intuitive, I focused the navigation on two main areas: one at the top focusing on the library as most people know it – a source of information and a resource for learning – and one on the bottom focusing on the library as an organization. This focus-based separation allows users to stick to a single, main method of navigation throughout the entire site, rather than having to move / search for what they need between navigation areas and links. Users would now also have a more distinct starting point when searching for a particular page or piece of information. The fewer navigation bars / sections also removes the need for overlapping content.</p><br>
+      <p>
+	<b>Learnability:</b><br><br>
+To improve learnability for new users, I separated the current search feature into two separate features / areas. The search bar on the top right of the page performs searches through website content, while the search in the navigation bar searches through the library's catalog.</p><br>
+      <p>
+	<b>Efficiency:</b><br><br>
+	To improve efficiency, I focused my changes on the following common website use cases:</p><br>
+      <ul>
+	<li>Filtering after performing a search: Rather than having all of the options for the filters being presented as links as was originally the case, I decided to present the options for each filter in drop down menus. This conserves space, and allows the user to quickly look through all of the available filter categories (location, language, etc). I also decided to place all of the results in their own scrollable window within the page rather than having the entire page scroll, since this would allow users to be able to quickly reach the filter functionality regardless of where they are in the search results.</li><br>
+	<li>Looking for a library's hours: Since this is a very common use case for the website, I decided to make a separate section for hours at the top of the website.</li><br>
+	<li>Checking account details: Logging in and checking account information  is a frequently used feature (particularly just after reserving a book online), so I decided to include a small snapshot of account information on the top right of every page. Once logged in, the area will show account details, allowing users to quickly verify that the books they requested while browsing the website have been updated without constantly having to go to their account page.</li>
+      </ul><br><br>
       <h3>Hi-fi mockup (Visual Redesign):</h3>
+      <p>Once I had the layout, navigation, and general usability figured out, my next step was to redesign the website with a focus on visual appearance. I decided to build my high fidelity mockups using Proto.io.</p>
       <img src="imgs/Redesign.png" alt="redesign hi-fi">
-      <p>For my visual redesign, I made several changes. I first used a 6 column vertical grid to improve alignment. I chose 6 columns, since it was small enough to provide structure while still large enough to accommodate my sections / groupings.<br><br>I then changed the color palette to orange and blue. I chose orange as the main color to match the library’s logo, and blue as the accent color since it is complementary to orange. To improve navigation and to help a user find what they need more quickly, I used blue to draw attention to important areas like closure notices, the search catalog link, and headings.</p>
+      <p>For my visual redesign, I made several changes. I first used a 6 column vertical grid to improve alignment. I chose 6 columns, since it was small enough to provide structure while still large enough to accommodate my sections / groupings.<br><br>I then changed the color palette for the overall website to orange and blue. I chose orange as the main color to match the library’s logo, and blue as the accent color since it was complementary to orange. To improve navigation and to help a user find what they need more quickly, I used blue to draw attention to important areas like closure notices, the search catalog link, and headings.</p>
     </div>
   </body>
 </html>
