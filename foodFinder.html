@@ -36,8 +36,30 @@
       <h2>Design</h2>
     </div>
     <div class="writing">
+      <h3>Wireframing</h3>
+      <p>Before I started coding, I decided to build a wireframe (using Balsamiq) to get a general sense of the layout and components for the web application, since seeing these components would give me a general sense of how my React components should be set up.</p><br>
+      <img src="imgs/foodFinderWireframe.png" alt="food finder wireframe">
+    <div class="subheading">
+      <h2>Development</h2>
+    </div>
+    <div class="writing">
+      <p>Once I had the wireframe, I could see that I needed three React components (four if counting the main App component). I had a FilteredList component, a List component, and an IdeaBox component.</p><br>
+      <p>The FilteredList component handled the search, filter, and sort functionalities. It received food data from the App, and its state consisted of five items representing the search term, the chosen taste and location options for filtering, the method of sorting, and a list of added ideas. Typing into the search bar on the page triggers a state change (the search item in the state is changed to the new search term), as does selecting a new option in the taste, location, or sortBy dropdowns (which changes the taste, location, and sortBy item in the state, respectively, to the new chosen option). Clicking the reset button also triggers a state change, since the entire state is reset back to default options. After each change to state, the list of food items is rerendered (sorting the results left after applying the new filters). </p><br>
+      <p>The List component mainly handled displaying each individual food’s name, image, and details. It received a filtered and sorted list of food items, along with a callback functionfor adding items to the ideas list from the FilteredList component. If a user clicks add for an individual item, the callback received from FilteredList (addFunc) is triggered, adding that item to the ideas list in the FilteredList state.</p><br>
+      <p>The third component, IdeaBox, counted the number of items added by the user and handled displaying a counter for the number of food items/ideas added (located on the lower right corner of the page). It received the idea list from the FilteredList component.</p><br>
+    <div class="subheading">
+      <h2>Result</h2>
+    </div>
+    <div class="writing">
+      <p>Once I had the general components set up and working, I decided to go back to the design and polish the visual appearance.</p><br>
       <img src="imgs/foodFinder.png" alt="food finder">
-      <p>The application incorporates several user interface design principles. For the layout, it uses a grid for a cleaner appearance, and the most important information (the search bar and filters) is placed on the top left of the page, allowing them to be visible regardless of screen size. I made use of center part alignment in the info below the images to improve readability, since the categories vary in terms of length, and chose a minty green color for a more relaxed but still food-related appearance. </p>
+      <p>The resulting application incorporates several user interface design principles. For the layout, it uses a grid for a cleaner appearance, and the most important information (the search bar and filters) is placed on the top left of the page, allowing them to be visible regardless of screen size. I made use of center part alignment in the info below the images to improve readability, since the categories vary in terms of length, and chose a minty green color for a more relaxed but still food-related appearance. </p>
+    </div>
+    <div class="subheading">
+      <h2>Conclusion</h2>
+    </div>
+    <div class="writing">
+      <p>Overall, I really enjoyed building this application using React. I found React to be very suitable for NYCFoodFinder, and to generally be suitable for webpages and web apps where there are a lot of changes to the DOM on a single page. In the process of building NYCFoodFinder, however, I could see where using React might potentially present difficulties for larger, more complex applications. When using React, data generally flows in one direction and while this can be worked around in some cases using callbacks, it can get a little messy trying to figure how to route the data in the cleanest / most efficient way. Regardless, as with any tool, tradeoffs are to be expected, and React definitely worked quite well for this project.</p>
     </div>
   </body>
 </html>
