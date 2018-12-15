@@ -60,6 +60,11 @@ h1 {
     box-shadow: 1px 1px 10px grey;
 }
 
+.portfolioItem:hover {
+    box-shadow: 1px 1px 20px grey;
+    width:45.1%;
+}
+
 .portfolioItem a {
     padding: 0px;
     border: 0px;
@@ -191,6 +196,11 @@ a {
 #redesign {
     text-align: center;
     margin-top:21px;
+}
+
+#redesign a:hover {
+    color: #DD5F0A;
+    background-color: white;
 }
 
 #redesign .subheading {
@@ -327,7 +337,7 @@ a {
 }
 
 #abTesting #topBanner {
-    background-color: #ECEC86;
+    background-color: #FFFF99;
     color: grey;
 }
 
