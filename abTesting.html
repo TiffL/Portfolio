@@ -19,12 +19,33 @@
       <h2>Context</h2>
     </div>
     <div class="writing">
-      <p>For this project, my goal was to create two versions of the same website (Memphis Taxi Cabs) to see how small changes affect user reactions and responses.</p>
+      <p>In web design and development, A/B Testing is often used to compare the performance of and potentially decide between two versions of a webpage. When visiting the page, users are shown one of the two versions at random, and various metrics (such as click rate) are recorded and analyzed to determine which of the two versions performed better.</p><br>
+      <p>For this study, my goal was to create two versions of a simple homepage for Memphis Taxi Cabs, a company that advertises several different options for taxi services, and to subsequently conduct A/B Testing to see if and how small differences in website layout and content affect user actions and responses.</p>
+    </div>
+    <div class="subheading">
+      <h2>Tools</h2>
+    </div>
+    <div class="writing">
+      <ul>
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>Heroku Hosting</li>
+	<li>Microsoft Excel</li>
+      </ul>
     </div>
     <div class="subheading">
       <h2>Design & Hypotheses</h2>
     </div>
     <div class="writing">
+      <p>I started off by considering all of the potential differences that I could implement for the two versions. The differences had to be distinct enough to increase the likelihood of having a significant difference in the metrics/results, yet simple enough that I could pinpoint what specific changes were responsible for that difference in results. I ultimately chose to make several changes between the two versions. It would often be better to make just one change A/B Testing, as is commonly advised, but in this study, I decided to test some of my basic assumptions (as documentated later in the hypotheses) when it comes to design.</p><br>
+
+      <p>Here are the differences I decided to include:</p>
+      <ol>
+	<li>Vertical vs Horizontal Layout</li>
+	<li>Bolded Keywords</li>
+	<li>Call-to-action button colors (Blue vs Green)</li>
+	<li>Strength of call-to-action button statements</li>
+      </ol>
       <h3>Version A</h3>
       <img src="imgs/abTesting/versionA.png" alt="version A">
       <h3>Version B</h3>
@@ -45,26 +66,43 @@
       </ol>
     </div>
     <div class="subheading">
-       <h2>Results</h2>
+       <h2>Data Collection & Results</h2>
     </div>
     <div class="writing">
+      
+      <div id="filteredLog">
+	<img src="imgs/abTesting/filteredLog.png" alt="filtered log">
+      </div><br>
+      <p>To measure results, I set up my webpage so that Version A and Version B had equal likelihood of being shown to a visitor to the page and hosted it on a Heroku server. I then set up data collection so that all of the heroku logs would be recorded and consolidated into a text file. The actual data collection was done in our UI/UX class, in which my classmates and I put ourselves in the shoes of those looking to hail a taxi while visiting each others' pages.</p><br>
       <h3>Metric Computations</h3>
-      <img src="imgs/abTesting/metricComputations.png" alt="Metric Computations">
-      <h3>Statistical Tests:</h3>
-<p>For click rate, I chose the chi-squared test, because the data is discrete (clicked or didn’t click). For time to click, I chose the t-test, because the data consists of measurements of time, which is continuous, and because the null hypothesis I am testing consists of means.</p>
-<p>For dwell time, I chose the t-test, because the data consists of measurements of time, which is continuous, and because the null hypothesis I am testing consists of means.</p>
-<p>For return rate, I chose the chi-squared test, because the data is discrete (returned or didn’t return).</p>
-<h3>Statistical Computations:</h3>
-<p>- Click rate: X2 = 0.3058 < 3.84, so p > 0.05. This means that the results were not statistically significant, so we fail to reject the null hypothesis.</p>
-<p>- Time to click: abs(t) = 1.1085 < 1.714, so p > 0.05. This means that the results were not statistically significant, so we fail to reject the null hypothesis.</p>
-<p>- Dwell time: abs(t) = 1.8315 > 1.7247, so p < 0.05. This means that the results were statistically significant, so we reject the null hypothesis.</p>
-<p>- Return rate: X2 = 1.0785 < 3.84, so p > 0.05. This means that the results were not statistically significant, so we fail to reject the null hypothesis.</p>
+      <p>Once I collected enough data for both pages, I imported the data into an excel spreadsheet, set up some formulas, and got to work calculating the metrics and statistics.</p><br>
+      <img src="imgs/abTesting/excel.png" alt="excel"><br><br>
+      <div id="metricComputations">
+	<p>The results of my metric computations were as follows:</p>
+	<img src="imgs/abTesting/metricComputations.png" alt="Metric Computations">
+      </div>
+      <h3>Statistical Test Choices:</h3>
+      <p>Having finished all of my metrics calculations, my next step was to calculate the statistical significance of the differences found.</p><br>
+      <ol>
+	<li>For the click rate, I chose the chi-squared test, because the data was discrete (clicked or didn’t click). </li>
+	<li>For the time to click, I chose the t-test, because the data consists of measurements of time, which is continuous, and because the null hypothesis I was testing consists of means.</li>
+	<li>For the dwell time, I chose the t-test, because the data consists of measurements of time, which is continuous, and because the null hypothesis I was testing consists of means.</li>
+	<li>For the return rate, I chose the chi-squared test, because the data was discrete (returned or didn’t return).</li>
+      </ol>
+      <h3>Statistical Computations:</h3>
+      <ol>
+	<li>Click rate: X2 = 0.3058 < 3.84, so p > 0.05. This means that the results were not statistically significant, so we fail to reject the null hypothesis.</li>
+	<li>Time to click: abs(t) = 1.1085 < 1.714, so p > 0.05. This means that the results were not statistically significant, so we fail to reject the null hypothesis.</li>
+	<li>Dwell time: abs(t) = 1.8315 > 1.7247, so p < 0.05. This means that the results were statistically significant, so we reject the null hypothesis.</li>
+	<li>Return rate: X2 = 1.0785 < 3.84, so p > 0.05. This means that the results were not statistically significant, so we fail to reject the null hypothesis.</li>
+      </ol><br>
+      <p>Based on the data analysis from A/B testing, version B led to a longer dwell time (shown to be statistically significant by the t-test), which meant that the user found the external link to be relevant.</p>
     </div>
     <div class="subheading">
       <h2>Conclusion</h2>
     </div>
     <div class="writing">
-      <p>I would recommend that the company use version B, since based on the data analysis from AB testing, version B leads to a longer dwell time (shown to be statistically significant by the t-test) and a longer dwell time means that the user found the external link to be relevant.</p>
+      <p>Although Version B did turn out to perform better than version A, I was really surprised by the fact that the differences in layout and content between the two versions didn't make that much of a difference in terms of the results for most of the metrics. Thinking over the experiment, it is very likely that the subset of users that participated in the A/B testing was a bit biased (since we were all mostly students working on similar assignments), potentially skewing the results. I would be very interested in seeing whether completing the test again with users who are completely unfamiliar with the details of the particular experiment (as I would when conducting A/B tests outside of a class setting) would lead to a much larger difference in the results. </p><br>
     </div>
   </body>
 </html>

@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0px;
     --primary-color: #0CBFE3; /*#1E90FF;*/ /*#00BFFF;*/
 }
 
@@ -9,21 +9,26 @@ h1 {
 }
 
 #topPart {
-    font-family: 'Comfortaa', cursive;
     background-color: var(--primary-color);
     color: white;
     height: 80vh;
     min-height: 550px;
+    margin-top: -21px;
 }
+
+/*#mainPage {
+    padding-bottom: 100px;
+    background-color: #0CBFE3;
+}*/
 
 #mainPage h1 {
     padding: 200px 0px 0px 0px;
     text-align: center;
+    font-family: 'Comfortaa', cursive;
 }
 
 .portfolioItem h2 {
     background-color: var(--primary-color);
-    color: white;
     padding: 10px 20px;
     position: absolute;
     margin: 10px auto 0px -3px;
@@ -35,6 +40,8 @@ h1 {
     margin: auto;
     text-align: center;
     max-width: 500px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
 }
 
 #mainPage #navBar a {
@@ -48,6 +55,7 @@ h1 {
     width: 80%;
     background-color: white;
     border-radius: 5px;
+    /*box-shadow: 1px 1px 10px grey;*/
 }
 
 .portfolioItem {
@@ -80,10 +88,6 @@ h1 {
     height: auto;
     opacity: 0.8;
     z-index:-1;
-}
-
-#abTestingHome img {
-    height: 120%;
 }
 
 /* ----------------------------------------------- */
@@ -140,9 +144,11 @@ a {
 }
 
 #topBanner {
-    font-family: 'Comfortaa', cursive;
+    /*font-family: 'Comfortaa', cursive;*/
     color: white;
     height: 80vh;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
 }
 
 #foodFinder h1, #redesign h1, #langDev h1, #abTesting h1 {
@@ -159,7 +165,6 @@ a {
 #foodFinder {
     background-color: white;/*#F0EDE5;*/
     text-align: center;
-    margin-top:21px;
 }
 
 #foodFinder a:hover {
@@ -196,7 +201,6 @@ a {
 
 #redesign {
     text-align: center;
-    margin-top:21px;
 }
 
 #redesign a:hover {
@@ -255,7 +259,6 @@ a {
 
 #langDev {
     text-align: center;
-    margin-top:21px;
 }
 
 #langDev h3 {
@@ -319,7 +322,6 @@ a {
 
 #abTesting {
     text-align: center;
-    margin-top:21px;
 }
 
 #abTesting a {
@@ -356,4 +358,16 @@ a {
     width: 50%;
     margin: auto;
     text-align: left;
+}
+
+#abTesting ul {
+    width: 10%;
+    margin: auto;
+    text-align: left;
+}
+
+#filteredLog img, #metricComputations img {
+    box-shadow: 1px 1px 10px grey;
+    margin: 20px 0px 30px 0px;
+    width: 40%;
 }
