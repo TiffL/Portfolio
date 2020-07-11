@@ -2,60 +2,103 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Raleway" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Raleway|Roboto" rel="stylesheet">
     <title>A/B Testing</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172417309-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-172417309-1');
+    </script>
   </head>
   <body id="abTesting">
     <div id="navBar">
-      <a href="./index.html">Xiuzhen (Tiffany) Lei</a>
+      <a href="./index.html">Tiffany Lei</a>
     </div>
     <div id="topBanner">
       <h1>A/B Testing</h1>
-      <p>A/B Testing for Memphis Taxi Cabs is a study conducted as part of a UI/UX class exploring A/B Testing as one method of measuring and improving user experience.</p>
-      <a href="https://whispering-oasis-16794.herokuapp.com" target="_blank">Visit Website</a>
+      <p>A/B Testing for Memphis Taxi Cabs is a study conducted as part of a
+        UI/UX class exploring A/B Testing as one method of measuring and
+        improving user experience.<br><br>
+
+        <span class="note">
+          *Note: The link below takes you to the page used in this study.
+          You'll be shown either version A or B randomly. The taxi pages linked
+          to from the initial landing page are not part of this study and
+          belong to their respective owners.</span></p>
+      <a href="https://whispering-oasis-16794.herokuapp.com" target="_blank">
+        <button>Visit Website</button>
+      </a><br><br>
     </div>
     <div class="subheading">
       <h2>Context</h2>
     </div>
     <div class="writing">
-      <p>In web design and development, A/B Testing is often used to compare the performance of and potentially decide between two versions of a webpage. When visiting the page, users are shown one of the two versions at random, and various metrics (such as click rate) are recorded and analyzed to determine which of the two versions performed better.</p><br>
-      <p>For this study, my goal was to create two versions of a simple homepage for Memphis Taxi Cabs, a company that advertises several different options for taxi services, and to subsequently conduct A/B Testing to see if and how small differences in website layout and content affect user actions and responses.</p>
+      <p>In web design and development, A/B Testing is often used to
+        compare the performance of and potentially decide between two
+        versions of a webpage. When visiting the page, users are shown
+        one of two versions at random, and various metrics (such
+        as click rate) are recorded and analyzed to determine which
+        of the two versions performed better.</p><br>
+      <p>For this study, my goal was to create two versions of a
+        simple homepage for Memphis Taxi Cabs, a company that advertises
+        several different options for taxi services, and to subsequently
+        conduct A/B Testing to see if and how small differences in website
+        layout and content affect user actions and responses.</p>
     </div>
     <div class="subheading">
       <h2>Tools</h2>
     </div>
     <div class="writing">
       <ul>
-	<li>HTML</li>
-	<li>CSS</li>
-	<li>Heroku (Hosting)</li>
-	<li>Excel (Analysis)</li>
+	       <li>HTML</li>
+	       <li>CSS</li>
+	       <li>Heroku (Hosting)</li>
+	       <li>Excel (Analysis)</li>
       </ul>
     </div>
     <div class="subheading">
       <h2>Design & Hypotheses</h2>
     </div>
     <div class="writing">
-      <p>I started off by considering all of the potential differences that I could implement for the two versions. The differences had to be distinct enough to increase the likelihood of having a significant difference in the metrics/results, yet simple enough that I could pinpoint what specific changes were responsible for that difference in results. I ultimately chose to make several changes between the two versions. It would often be better to make just one change A/B Testing, as is commonly advised, but in this study, I decided to test some of my basic assumptions (as documentated later in the hypotheses) when it comes to design.</p><br>
+      <p>I started off by considering what assumptions I wanted to test and
+        how I could implement differences between the two versions to test them.
+        The differences had to be distinct enough to increase the likelihood
+        of having a statistically significant difference in the metrics/results,
+        yet simple enough that I could pinpoint what specific set of
+        changes were responsible for the difference in results.
+      </p><br>
 
-      <p>Here are the differences I decided to include:</p>
+      <p>I ultimately chose the following set of changes to test how
+        website layout and content affects user engagement:</p>
       <ol>
-	<li>Vertical vs Horizontal Layout</li>
-	<li>Bolded Keywords</li>
-	<li>Call-to-action button colors (Blue vs Green)</li>
-	<li>Strength of call-to-action button statements</li>
-      </ol>
-      <h3>Version A</h3>
-      <img src="imgs/abTesting/versionA.png" alt="version A">
-      <h3>Version B</h3>
-      <img src="imgs/abTesting/versionB.png" alt="version B">
+	       <li>Vertical vs Horizontal Layout</li>
+	       <li>Bolded Keywords</li>
+	       <li>Call-to-action button colors (Blue vs Green)</li>
+	       <li>Strength of call-to-action button statements</li>
+      </ol><br>
+      <div class="nextTo">
+        <div>
+          <h3>Version A</h3>
+          <img src="imgs/abTesting/versionA.png" alt="version A">
+        </div>
+        <div>
+          <h3>Version B</h3>
+          <img src="imgs/abTesting/versionB.png" alt="version B">
+        </div>
+      </div>
       <h3>Null Hypotheses:</h3>
       <ol>
-	<li>Click rate: The click through rate on Version A will be equal to the click through rate on Version B.</li>
-	<li>Time to click: The time to click on Version A will be equal to the click through rate on Version B.</li>
-	<li>Dwell time: The dwell time on Version A will be equal to the click through rate on Version B.</li>
-	<li>Return rate: The return rate on Version A will be equal to the click through rate on Version B.</li>
+        <li>Click rate: The click through rate on Version A will be equal to the click through rate on Version B.</li>
+        <li>Time to click: The time to click on Version A will be equal to the click through rate on Version B.</li>
+        <li>Dwell time: The dwell time on Version A will be equal to the click through rate on Version B.</li>
+        <li>Return rate: The return rate on Version A will be equal to the click through rate on Version B.</li>
       </ol>
       <br>
       <h3>Alternate Hypotheses</h3>
@@ -70,7 +113,7 @@
        <h2>Data Collection & Results</h2>
     </div>
     <div class="writing">
-      
+
       <div id="filteredLog">
 	<img src="imgs/abTesting/filteredLog.png" alt="filtered log">
       </div><br>
@@ -104,6 +147,10 @@
     </div>
     <div class="writing">
       <p>Although Version B did turn out to perform better than version A, I was really surprised by the fact that the differences in layout and content between the two versions didn't make that much of a difference in terms of the results for most of the metrics.<br><br>Thinking over the experiment, it is very likely that the subset of users that participated in the A/B testing was a bit biased (since we were all mostly students working on similar assignments), potentially skewing the results. I would be very interested in seeing whether completing the test again with users who are completely unfamiliar with the details of the particular experiment (as I would when conducting A/B tests outside of a class setting) would lead to a much larger difference in the results. </p><br>
+    </div>
+    <div class="switch-section">
+      <div class="prev-project"><a href="./foodFinder.html"><- Previous Project</a></div>
+      <div class="next-project"><a href="./libraryRedesign.html">Next Project -></a></div>
     </div>
   </body>
 </html>

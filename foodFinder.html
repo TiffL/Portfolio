@@ -2,18 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/projects.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Raleway" rel="stylesheet">
     <title>NYCFoodFinder</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172417309-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-172417309-1');
+    </script>
   </head>
   <body id="foodFinder">
     <div id="navBar">
-      <a href="./index.html">Xiuzhen (Tiffany) Lei</a>
+      <a href="./index.html">Tiffany Lei</a>
     </div>
     <div id="topBanner">
       <h1>NYC Food Finder</h1>
       <p>NYC Food Finder is a web app that helps people discover fun and interesting food options and experiences in the city. It was created as part of a UI/UX class project exploring the use of live filtering in improving user experience.</p>
-      <a href="https://tiffl.github.io/NYCFoodFinder/" target="_blank">Visit Website</a>
+      <a href="https://tiffl.github.io/NYCFoodFinder/" target="_blank"><button>Visit Website</button></a>
     </div>
     <div class="subheading">
       <h2>Context</h2>
@@ -60,6 +71,10 @@
     </div>
     <div class="writing">
       <p>Overall, I really enjoyed building this application using React. I found React to be very suitable for NYCFoodFinder, and to generally be suitable for webpages and web apps where there are a lot of changes to the DOM on a single page. In the process of building NYCFoodFinder, however, I could see where using React might potentially present difficulties for larger, more complex applications. When using React, data generally flows in one direction and while this can be worked around in some cases using callbacks, it can get a little messy trying to figure how to route the data in the cleanest / most efficient way. Regardless, as with any tool, tradeoffs are to be expected, and React definitely worked quite well for this project.</p>
+    </div>
+    <div class="switch-section">
+      <div class="prev-project"><a href="./langDev.html"><- Previous Project</a></div>
+      <div class="next-project"><a href="./abTesting.html">Next Project -></a></div>
     </div>
   </body>
 </html>

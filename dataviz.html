@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Raleway" rel="stylesheet">
+    <title>Game Sales Dashboard</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172417309-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-172417309-1');
+    </script>
+  </head>
+  <body id="dataviz">
+    <div id="navBar">
+      <a href="./index.html">Tiffany Lei</a>
+    </div>
+    <div id="topBanner">
+      <h1>Game Sales Dashboard</h1>
+      <p>Interactive data visualization dashboard displaying and
+        exploring video game sales across genres, publishers, and years.
+        Video games sales <a href="https://www.kaggle.com/gregorut/videogamesales" target="_blank">dataset</a> is from Kaggle.
+      </p>
+      <!--<a href="https://epubbly.herokuapp.com/" target="_blank"><button>Visit Website</button></a>-->
+    </div>
+    <div class="subheading">
+      <h2>Context</h2>
+    </div>
+    <div class="writing">
+      <p>The goal for this project was to design a dashboard that effectively visualizes
+        video game sales data to meet the needs of a potential audience looking to perform
+        exploratory analysis. In order to be effective, it needed to accomplish the
+        following: have an easily understandable and navigatable interface, clearly
+        communicate potential trends or patterns (or lack therof) to follow up on, and
+        efficiently display the large amount of data and information in a smaller and more
+        compact visual space.</p>
+    </div>
+    <div class="subheading">
+      <h2>Tools</h2>
+    </div>
+    <div class="writing tools">
+      <ul>
+	       <li>HTML</li>
+           <li>CSS</li>
+           <li>JavaScript</li>
+	       <li>D3.js</li>
+      </ul>
+    </div>
+    <div class="subheading">
+        <h2>Design</h2>
+    </div>
+    <div class="writing">
+        <h3 class="pb-10">The Questions</h3>
+        <p>Although the data is of interest to many different audiences,
+          this dashboard views the data from the perspective of
+          a game developer looking to create a new product. The intended
+          audience, then, may be looking to answer the following questions as
+          part of their exploratory analysis: <br><br></p>
+        <ul>
+          <li class="pb-4">Which games have had the most sales? This could be a gateway
+            into further research on why these top-selling games peformed so well.</li>
+          <li class="pb-4">Who are the competitors in their intended genre? Who are the
+            major players?</li>
+          <li>How popular is their intended genre in a particular region?</li>
+        </ul>
+        <br>
+
+        <h3 class="pb-10">The Dataset</h3>
+        <p>The Kaggle dataset contains the following fields:
+          video game name, ranking, year published, genre,
+          publisher, and sales. Sales data includes both total
+          global sales and sales broken up into
+          regional categories - North America, Europe, Japan, and Other.
+          This isn't ideal, since the regional groupings are of differing
+          levels of specificity (continents vs. countries vs. everywhere
+          else), making it difficult to do comparisons between regions. Due
+          to time constraints, I used the categories as is for this project,
+          but an extension of this project could benefit from sourcing
+          additional data from other places.</p>
+        <br>
+
+        <h3 class="pb-10">The Graphs</h3>
+        <p>The next step was to put together the questions and the dataset.
+          Each section of the dashboard addresses one of the questions above.</p><br>
+        <div class="img-block">
+          <div class="caption">
+            <p class="pb-10"><b>Section 1: Which games have had the most sales?</b></p>
+            <p>This section shows the top 10 best-selling video games of
+               all time, as well as for each individual release year. Rank is
+               determined by the video game's total global sales.</p>
+          </div>
+          <img src="imgs/dataviz/graph1.gif" alt="graph1">
+        </div>
+        <div class="img-block">
+          <div class="caption">
+            <p class="pb-10"><b>Section 2: Who are the competitors in
+               their intended genre? Who are the major players?</b></p>
+            <p class="pb-10">This section consists of two views: a rankings
+              and a stats view. The rankings view displays the 20
+              best selling publishers for each genre, providing insight
+              as to who the major players are in each.</p>
+            <p>It is important to keep in mind that these major players
+              tend to be extreme outliers in terms of total sales when
+              compared to the average total sales in their genre, however.
+              As a result, developers may prefer to use
+              the stats view instead to get a better sense of what
+              the average company can expect to earn in terms of global sales
+              and to identify similarly positioned developers that are more
+              likely to be competitors.</p>
+          </div>
+          <img src="imgs/dataviz/graph3.gif" alt="graph3">
+        </div>
+        <div class="img-block">
+          <div class="caption">
+            <p class="pb-10">Stats view gives an overview of publishers in
+              each genre and where they stand in relation to one another
+              in terms of total sales within the genre.</p>
+            <p class="pb-10">Both individual data points and box plots are shown. Here the
+              focus is on the box plots. The lower right toggle, however, gives the
+              option of focusing on the points instead. Jitter is included to limit overlaps and to give a better
+              sense of the data's distribution.</p>
+            <p class="pb-10">Tooltips are also included to provide a more detailed look
+              at the data. Hovering over a point reveals the publisher's
+              name and sales, while hovering over a plot brings up
+              statistics for the genre's publisher total sales.</p>
+          </div>
+          <img src="imgs/dataviz/graph2.gif" alt="graph2">
+        </div>
+        <div class="img-block" id="block5">
+          <div class="caption">
+            <p class="pb-10"><b>Section 3:
+              How popular is their intended genre in a particular region?</b></p>
+            <p class="pb-10">For this section, total sales across all publishers is
+              aggregated for each region in the dataset -
+              North America, Europe, Japan, and "Other". The map provides a
+              quick overview of results, displaying the best-selling genre
+              for each region. </p>
+            <p>Several GeoJSON objects (one for each of the dataset's regions)
+              were combined to provide interactivity for additional detail.
+              Hovering over each region updates a pie chart
+              breaking down the region's genre sales, allowing developers to
+              gauge their intended genre's relative share of the region's market.</p>
+          </div>
+          <div class="img-positioning-wrapper">
+          <img id="graph5" src="imgs/dataviz/graph5-map.png" alt="graph5">
+          <img id="graph4" src="imgs/dataviz/graph4-pie.png" alt="graph4">
+          </div>
+        </div>
+    </div>
+    <div class="subheading">
+      <h2>Result</h2>
+    </div>
+    <div class="writing">
+      <p></p><br>
+      <img src="imgs/dataviz/fullViz.png" alt="dashboard">
+      <p></p>
+    </div>
+    <div class="switch-section">
+      <div class="prev-project"><a href="./epubbly.html"><- Previous Project</a></div>
+      <div class="next-project"><a href="./langdev.html">Next Project -></a></div>
+    </div>
+  </body>
+</html>

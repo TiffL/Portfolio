@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Raleway" rel="stylesheet">
+    <title>ePubbly</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172417309-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-172417309-1');
+    </script>
+  </head>
+  <body id="epubbly">
+    <div id="navBar">
+      <a href="./index.html">Tiffany Lei</a>
+    </div>
+    <div id="topBanner">
+      <h1>ePubbly</h1>
+      <p>ePubbly is a browser-based ePub viewer. It was built with the aim of
+        giving people (especially Windows users) the option of viewing
+        their .epub files online without having to download additional software.</p>
+      <a href="https://epubbly.herokuapp.com/" target="_blank"><button>Visit Website</button></a>
+    </div>
+    <div class="subheading">
+      <h2>Context</h2>
+    </div>
+    <div class="writing">
+      <p>Earlier in May, a friend was looking for recommendations
+        for online ePub readers, since Microsoft Edge had stopped
+        their support for .epub. A quick online search revealed
+        that although there are existing options for ePub readers,
+        most are either in the form of browser extensions or
+        downloadable software. This isn't ideal for several groups
+        of users, including those looking to read their .epubs
+        accross multiple devices (as it would require redownloading a copy of the
+        extension or software for each device), and those with limited
+        device space. Of the few in-browser options found, none seemed to
+        offer the customizability and assessibility (dark mode,
+        larger font) of existing downloadable options. <br><br>
+
+        As a result, I decided to build one. My goal for this project,
+        then, was to create a web app
+        that allows users to view their .epub files in the browser, with the process
+        as streamlined and simple as possible. </p>
+    </div>
+    <div class="subheading">
+      <h2>Tools</h2>
+    </div>
+    <div class="writing">
+      <ul>
+	       <li>Vue.js</li>
+      </ul>
+    </div>
+    <div class="subheading">
+      <h2>Design</h2>
+    </div>
+    <div class="writing">
+      <p><br>In keeping with the site's "no hassle" tagline, I went with a
+      minimalistic look and feel for the site. Keeping both the navigation
+      and appearance simple will help minimize distractions, hopefully improving the
+      experience for most users whose goal is to focus
+      on their book or document.<br><br>
+      To achieve a relaxed feel, the color palette consists of more muted colors.
+      The project's title is ePubbly (think "bubbly"), though, so to keep the
+      mood rather joyful as well, I went with colors on the lighter end of
+      the spectrum - a warm beige primary color with a brighter blue accent.<br><br>
+      <br></p>
+      <div class="img-block">
+        <div class="caption">
+          <p>Users are greeted by a
+            landing page with a single button to choose a file.
+            Only .epub files are accepted, and the file navigator greys out
+            non-epub files, making it easier for
+            users to locate the files they need.</p>
+        </div>
+        <img src="imgs/epubbly/epubblyHome.png" alt="epubbly home">
+      </div>
+      <div class="img-block">
+        <div class="caption">
+          <p>The reading view keeps tools
+            accessible at the top of the screen, but with decreased contrast to
+            avoid competing with the document for the user's attention.<br><br>
+            These tools include a clickable table of contents for quick navigation
+            through the file, as well as customizability options.</p>
+        </div>
+        <img src="imgs/epubbly/epubbly.png" alt="epubbly reading view">
+      </div>
+      <div class="img-block">
+        <div class="caption">
+          <p>One of these options is dark mode, for a better nighttime
+          reading experience. </p>
+        </div>
+        <img src="imgs/epubbly/epubblyDark.png" alt="epubbly dark mode">
+      </div>
+      <!--<p>You can find ePubbly <a href="" target="_blank">here</a>. Enjoy :)</p>-->
+    </div>
+    <div class="switch-section">
+      <div class="next-project"><a href="./dataviz.html">Next Project -></a></div>
+    </div>
+  </body>
+</html>
